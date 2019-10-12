@@ -1,0 +1,252 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="2"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/mainpage"
+        android:layout_weight="0.8"
+
+        >
+
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="14dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="345dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="August"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/label_spending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="$ 1,9845"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/label_spending"
+                    android:layout_centerInParent="true"
+                    android:text="Net Spending"
+                    android:textColor="@android:color/holo_red_dark" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@android:color/transparent"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/firstline"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="6dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="56.7%"
+                        android:textSize="25dp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/budget_remain_percent"/>
+
+                    <TextView
+
+                        android:layout_below="@+id/budget_remain_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Budget Remaining"
+                        android:textSize="16dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:elevation="50dp"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="6dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$ 3,5000"
+                        android:textSize="25dp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/myIncome"
+                        />
+
+                    <TextView
+                        android:layout_below="@+id/myIncome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monthly Income"
+                        android:textSize="16dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/firstline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="6dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/optimal_spending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$ 946"
+                        android:textSize="25dp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_below="@+id/optimal_spending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today's optimal    "
+                        android:textSize="16dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:elevation="50dp"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="10dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/days_remaining"
+                        />
+
+                    <TextView
+                        android:layout_below="@+id/days_remaining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Days Remaining"
+                        android:textSize="16dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

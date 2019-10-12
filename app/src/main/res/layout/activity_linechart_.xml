@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="2"
+    android:orientation="vertical"
+    >
+
+ <com.github.mikephil.charting.charts.LineChart
+     android:layout_marginTop="5dp"
+     android:layout_marginLeft="2dp"
+     android:layout_marginRight="2dp"
+
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="0.9"
+     android:id="@+id/lineChart"></com.github.mikephil.charting.charts.LineChart>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.1"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    >
+
+ <TextView
+
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="August Statistics"
+     android:textStyle="bold"
+     android:textColor="@color/colorBlueDark"
+     android:textSize="20dp"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="5dp"
+     android:id="@+id/aven"
+     />
+
+ <LinearLayout
+     android:layout_marginTop="30dp"
+     android:id="@+id/above"
+     android:layout_below="@+id/aven"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:padding="10dp"
+     android:gravity="center">
+
+
+  <android.support.v7.widget.CardView
+      android:foreground="?android:attr/selectableItemBackground"
+      android:clickable="true"
+       app:cardBackgroundColor="@color/colorSky"
+      android:layout_width="160dp"
+      android:layout_height="80dp"
+      android:elevation="10dp"
+      app:cardCornerRadius="12dp"
+      >
+
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       >
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Net Spent"
+       android:textSize="20dp"
+        android:id="@+id/aven1"/>
+
+    <TextView
+        android:id="@+id/net_spent"
+        android:layout_below="@+id/aven1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 120"
+        android:textSize="20dp"/>
+
+   </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+
+  <android.support.v7.widget.CardView
+      android:foreground="?android:attr/selectableItemBackground"
+      android:clickable="true"
+      app:cardBackgroundColor="@color/colorMargenda"
+      android:layout_width="160dp"
+      android:layout_height="80dp"
+      android:elevation="10dp"
+      android:layout_marginLeft="20dp"
+      app:cardCornerRadius="10dp"
+      >
+
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Net Budget"
+        android:textSize="20dp"
+        android:id="@+id/aven3"/>
+
+    <TextView
+        android:id="@+id/net_budget"
+        android:layout_below="@+id/aven3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 520"
+        android:textSize="20dp"/>
+
+   </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_below="@+id/above"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:padding="10dp"
+     android:gravity="center">
+
+
+  <android.support.v7.widget.CardView
+      android:foreground="?android:attr/selectableItemBackground"
+      android:clickable="true"
+      app:cardBackgroundColor="@color/colorLOrange"
+      android:layout_width="160dp"
+      android:layout_height="80dp"
+      android:elevation="10dp"
+      app:cardCornerRadius="10dp"
+      >
+
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Spent"
+        android:textSize="20dp"
+        android:id="@+id/aven4"/>
+
+    <TextView
+        android:id="@+id/max_spent"
+        android:layout_below="@+id/aven4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 120"
+        android:textSize="20dp"/>
+
+   </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+
+  <android.support.v7.widget.CardView
+      android:foreground="?android:attr/selectableItemBackground"
+      android:clickable="true"
+      android:layout_width="160dp"
+      app:cardBackgroundColor="@color/colorGreen"
+      android:layout_height="80dp"
+      android:elevation="10dp"
+      android:layout_marginLeft="20dp"
+      app:cardCornerRadius="10dp"
+      >
+
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Spent"
+        android:textSize="20dp"
+        android:id="@+id/aven5"/>
+
+    <TextView
+        android:id="@+id/recent_spent"
+        android:layout_below="@+id/aven5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 520"
+        android:textSize="20dp"/>
+
+   </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+
+ </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+
+</LinearLayout>
