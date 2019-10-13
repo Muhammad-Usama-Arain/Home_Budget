@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/myIcon"
             android:layout_centerHorizontal="true"
-            android:text="Muhammad Usama \n  F16SW38,F16SW50"
+            android:text="Usama Habib \n  F16SW38,F16SW50"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="20dp"
